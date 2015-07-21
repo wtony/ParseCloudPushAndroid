@@ -21,9 +21,14 @@ public class ParseApplication extends Application {
     Parse.enableLocalDatastore(this);
 
     // Add your initialization code here
+<<<<<<< HEAD
     Parse.initialize(this, "H4rSxAvHsYiMGb5E0PAZTVGbtM2c8vz2IbWFw1Uj", "aj3Fv8vrfSJOIr5uxkcY0LIKLIZqj3voMyOjbpBx");
     ParseInstallation.getCurrentInstallation().saveInBackground();
+=======
+>>>>>>> alda-parse
 
+    Parse.initialize(this, "H4rSxAvHsYiMGb5E0PAZTVGbtM2c8vz2IbWFw1Uj", "aj3Fv8vrfSJOIr5uxkcY0LIKLIZqj3voMyOjbpBx");
+    ParseInstallation.getCurrentInstallation().saveInBackground();
 
     ParseUser.enableAutomaticUser();
     ParseACL defaultACL = new ParseACL();

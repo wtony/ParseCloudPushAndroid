@@ -9,4 +9,8 @@
         android:layout_height="wrap_content"
         android:text="@string/hello" />
 
+<<<<<<< HEAD
 </LinearLayout><!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/layout/main.xml -->
+=======
+</LinearLayout><!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/layout/main.xml -->
+>>>>>>> alda-parse
