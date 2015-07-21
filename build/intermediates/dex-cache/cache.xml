@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/alda/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-b0c01ffec8aa14e8d869eb0fbf390759961608af.jar" />
+    </item>
+    <item
+        jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/libs/ParseCrashReporting-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="7a11f2d74111fd9b02c2d091a1b76b82f6a4357e">
+        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.9.4-37f73c2eb2b836087b1d382415200bcdb2d8c08c.jar" />
+    </item>
+    <item
+        jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/libs/Parse-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="56c22930b5d4f77015b6a40c7f14103d3e101001">
+        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.9.4-d94c67ae179cff9c420a3e16ddbb0f4ae36459d4.jar" />
+    </item>
+
+</items>
