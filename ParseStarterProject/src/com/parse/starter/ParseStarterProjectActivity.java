@@ -59,15 +59,24 @@ public class ParseStarterProjectActivity extends AppCompatActivity {
 
 		ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
-		ParseQuery<ParseObject> queryComponent = ParseQuery.getQuery("Component");
-		ParseQuery<ParseObject> queryIncident = ParseQuery.getQuery("Incident");
+		ParseQuery<Component> queryComponent = ParseQuery.getQuery("Component");
+		ParseQuery<Incident> queryIncident = ParseQuery.getQuery("Incident");
 
-		queryComponent.findInBackground(new FindCallback<ParseObject>() {
+		queryComponent.findInBackground(new FindCallback<Component>() {
 			@Override
-			public void done(List<ParseObject> componentList, ParseException e) {
+			public void done(List<Component> componentList, ParseException e) {
 				if (e == null){
 					Log.d("AYYLMAO", componentList.toString());
 
+				}
+			}
+		});
+
+		queryIncident.findInBackground(new FindCallback<Incident>() {
+			@Override
+			public void done(List<Incident> incidentList, ParseException e) {
+				if (e == null){
+					Log.d("AYYLMAO", incidentList.toString());
 				}
 			}
 		});
