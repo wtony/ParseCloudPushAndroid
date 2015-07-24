@@ -67,61 +67,60 @@ public class ParseStarterProjectActivity extends AppCompatActivity {
 
 
 	private void loadFromParse(){
-		ParseQuery<Component> componentQuery = Component.getQuery();
-		ParseQuery<Incident> incidentQuery = Incident.getQuery();
-
-		componentQuery.findInBackground(new FindCallback<Component>() {
-			@Override
-			public void done(List<Component> componentList, ParseException e) {
-				if (e ==null){
-					ParseObject.pinAllInBackground((List<Component>) componentList,
-							new SaveCallback() {
-								@Override
-								public void done(ParseException e) {
-									if(e == null){
-										if(!isFinishing()){
-
-										}else{
-											Log.i("Component","Error:(");
-										}
-									}
-								}
-							});
-				}else{
-					Log.i("ComponentMore","Error;-;");
-				}
-			}
-		});
-
-
-		incidentQuery.findInBackground(new FindCallback<Incident>() {
-			@Override
-			public void done(List<Incident> incidentList, ParseException e) {
-				if (e ==null){
-					ParseObject.pinAllInBackground((List<Incident>) incidentList,
-							new SaveCallback() {
-								@Override
-								public void done(ParseException e) {
-									if(e == null){
-										if(!isFinishing()){
-
-										}else{
-											Log.i("Incident","Error:(");
-										}
-									}
-								}
-							});
-				}else{
-					Log.i("IncidentMore","Error;-;");
-				}
-			}
-		});
+//		ParseQuery<Component> componentQuery = Component.getQuery();
+//		ParseQuery<Incident> incidentQuery = Incident.getQuery();
+//
+//		componentQuery.findInBackground(new FindCallback<Component>() {
+//			@Override
+//			public void done(List<Component> componentList, ParseException e) {
+//				if (e ==null){
+//					ParseObject.pinAllInBackground((List<Component>) componentList,
+//							new SaveCallback() {
+//								@Override
+//								public void done(ParseException e) {
+//									if(e == null){
+//										if(!isFinishing()){
+//
+//										}else{
+//											Log.i("Component","Error:(");
+//										}
+//									}
+//								}
+//							});
+//				}else{
+//					Log.i("ComponentMore","Error;-;");
+//				}
+//			}
+//		});
+//
+//
+//		incidentQuery.findInBackground(new FindCallback<Incident>() {
+//			@Override
+//			public void done(List<Incident> incidentList, ParseException e) {
+//				if (e ==null){
+//					ParseObject.pinAllInBackground((List<Incident>) incidentList,
+//							new SaveCallback() {
+//								@Override
+//								public void done(ParseException e) {
+//									if(e == null){
+//										if(!isFinishing()){
+//
+//										}else{
+//											Log.i("Incident","Error:(");
+//										}
+//									}
+//								}
+//							});
+//				}else{
+//					Log.i("IncidentMore","Error;-;");
+//				}
+//			}
+//		});
 	}
 
 	@Override
 	public void onResume(){
 		super.onResume();
 
-		loadFromParse();
 	}
 }

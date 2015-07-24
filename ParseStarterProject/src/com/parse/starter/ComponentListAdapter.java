@@ -12,15 +12,18 @@ import com.parse.ParseQueryAdapter;
  * Created by Tony on 15-07-24.
  */
 public class ComponentListAdapter extends ParseQueryAdapter<Component> {
-    public ComponentListAdapter(Context context, ParseQueryAdapter.QueryFactory<Component> queryFactory){
+
+    LayoutInflater inflater;
+    public ComponentListAdapter(LayoutInflater inflater,Context context, ParseQueryAdapter.QueryFactory<Component> queryFactory){
         super(context,queryFactory);
+        this.inflater = inflater;
     }
 
     @Override
     public View getItemView(Component component, View view, ViewGroup parent){
         ViewHolder holder;
         if (view == null){
-            LayoutInflater inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.list_item, parent, false);
             holder = new ViewHolder();
 
