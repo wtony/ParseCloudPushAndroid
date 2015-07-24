@@ -2,6 +2,20 @@
 <items version="2" >
 
     <item
+        jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/libs/ParseCrashReporting-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="7a11f2d74111fd9b02c2d091a1b76b82f6a4357e">
+        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.9.4-37f73c2eb2b836087b1d382415200bcdb2d8c08c.jar" />
+    </item>
+    <item
+        jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-d66d237ab22c40d79a96d066d81f7c8a84c8c76f.jar" />
+    </item>
+    <item
         jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/libs/Parse-1.9.4.jar"
         jumboMode="false"
         revision="22.0.0"
@@ -23,18 +37,11 @@
         <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-32867361ffdaeb2363af53d5081e634655c64b39.jar" />
     </item>
     <item
-        jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/libs/ParseCrashReporting-1.9.4.jar"
+        jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
         jumboMode="false"
         revision="22.0.0"
-        sha1="7a11f2d74111fd9b02c2d091a1b76b82f6a4357e">
-        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.9.4-37f73c2eb2b836087b1d382415200bcdb2d8c08c.jar" />
-    </item>
-    <item
-        jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-d66d237ab22c40d79a96d066d81f7c8a84c8c76f.jar" />
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-5fd739e4637c019ff62d7f82084fdcf9323ffde5.jar" />
     </item>
     <item
         jar="/home/alda/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
@@ -42,13 +49,6 @@
         revision="22.0.0"
         sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
         <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-40eff6991286350f4be46a7c530834b4ccea46bb.jar" />
-    </item>
-    <item
-        jar="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-5fd739e4637c019ff62d7f82084fdcf9323ffde5.jar" />
     </item>
 
 </items>

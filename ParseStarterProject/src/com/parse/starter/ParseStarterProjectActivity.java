@@ -24,8 +24,8 @@ public class ParseStarterProjectActivity extends AppCompatActivity {
 		ViewPager pager;
 		ViewPagerAdapter pagerAdapter;
 		SlidingTabLayout tabs;
-		String titles[] = {"AYYLMAO"};
-		int numTabs = 1;
+		String titles[] = {"Components", "Incidents"};
+		int numTabs = 2;
 
 
 
