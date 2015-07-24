@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 
 /**
@@ -14,7 +15,7 @@ import com.parse.ParseQueryAdapter;
 public class ComponentListAdapter extends ParseQueryAdapter<Component> {
 
     LayoutInflater inflater;
-    public ComponentListAdapter(LayoutInflater inflater,Context context, ParseQueryAdapter.QueryFactory<Component> queryFactory){
+    public ComponentListAdapter(LayoutInflater inflater, Context context, ParseQueryAdapter.QueryFactory<Component> queryFactory){
         super(context,queryFactory);
         this.inflater = inflater;
     }
@@ -23,7 +24,6 @@ public class ComponentListAdapter extends ParseQueryAdapter<Component> {
     public View getItemView(Component component, View view, ViewGroup parent){
         ViewHolder holder;
         if (view == null){
-            inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.list_item, parent, false);
             holder = new ViewHolder();
 

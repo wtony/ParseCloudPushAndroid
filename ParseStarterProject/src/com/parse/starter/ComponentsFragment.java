@@ -24,7 +24,7 @@ public class ComponentsFragment extends ListFragment {
 
     private ParseQueryAdapter<Component> componentListAdapter;
     public ComponentsFragment(){
-        loadFromParse();
+
     }
 
     @Override
@@ -52,7 +52,6 @@ public class ComponentsFragment extends ListFragment {
 
     private void loadFromParse() {
         ParseQuery<Component> componentQuery = Component.getQuery();
-        ParseQuery<Incident> incidentQuery = Incident.getQuery();
 
         componentQuery.findInBackground(new FindCallback<Component>() {
             @Override
@@ -65,6 +64,7 @@ public class ComponentsFragment extends ListFragment {
                                     if (e == null) {
                                         if (!getActivity().isFinishing()) {
                                             componentListAdapter.notifyDataSetChanged();
+                                            componentListAdapter.loadObjects();
                                             Log.d("Ayylmao" , "Nayylmao");
                                         } else {
                                             Log.i("Component", "Error:(");
@@ -77,5 +77,11 @@ public class ComponentsFragment extends ListFragment {
                 }
             }
         });
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        loadFromParse();
     }
 }
