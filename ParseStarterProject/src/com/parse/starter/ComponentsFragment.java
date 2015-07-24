@@ -33,7 +33,7 @@ public class ComponentsFragment extends ListFragment {
         ParseQueryAdapter.QueryFactory<Component> factory = new ParseQueryAdapter.QueryFactory<Component>(){
             public ParseQuery<Component> create(){
                 ParseQuery<Component> query = Component.getQuery();
-                query.orderByDescending("createdAt");
+                query.orderByDescending("created_at");
                 query.fromLocalDatastore();
                 return query;
             }
@@ -44,7 +44,6 @@ public class ComponentsFragment extends ListFragment {
         componentListAdapter = new ComponentListAdapter(inflater,inflater.getContext(),
                 factory);
         setListAdapter(componentListAdapter);
-
 
         return super.onCreateView(inflater, container, savedInstanceState);
 

@@ -12,7 +12,7 @@ import com.parse.ParseQueryAdapter;
  * Created by Tony on 15-07-24.
  */
 public class IncidentListAdapter extends ParseQueryAdapter<Incident> {
-    public IncidentListAdapter(Context context, ParseQueryAdapter.QueryFactory<Incident> queryFactory){
+    public IncidentListAdapter(LayoutInflater inflater,Context context, ParseQueryAdapter.QueryFactory<Incident> queryFactory){
         super(context,queryFactory);
     }
 
@@ -21,19 +21,28 @@ public class IncidentListAdapter extends ParseQueryAdapter<Incident> {
         ViewHolder holder;
         if (view == null){
             LayoutInflater inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            // view = inflater.inflate(R.layo)
+            view = inflater.inflate(R.layout.list_item,parent,false);
             holder = new ViewHolder();
 
-            //setViewstuffs
+            holder.incidentName = (TextView) view.findViewById(R.id.name);
+            holder.incidentUpdatedAt = (TextView) view.findViewById(R.id.updatedAt);
+
+            view.setTag(holder);
         }else{
             holder = (ViewHolder) view.getTag();
         }
+
+            TextView incidentName = holder.incidentName;
+            incidentName.setText(incident.getName());
+            TextView incidentUpdatedAt = holder.incidentUpdatedAt;
+            incidentUpdatedAt.setText(incident.getIncidentUpdatedAt());
 
         return view;
     }
 
     private class ViewHolder{
         TextView incidentName;
+        TextView incidentUpdatedAt;
     }
 
 }
