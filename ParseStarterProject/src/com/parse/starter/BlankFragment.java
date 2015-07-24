@@ -14,6 +14,4 @@ public class BlankFragment extends ListFragment {
 
     }
 
-
-
 }

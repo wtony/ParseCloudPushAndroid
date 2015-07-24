@@ -13,6 +13,7 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.SaveCallback;
 
 import java.util.List;
 
@@ -25,6 +26,7 @@ public class ParseStarterProjectActivity extends AppCompatActivity {
 		SlidingTabLayout tabs;
 		String titles[] = {"AYYLMAO"};
 		int numTabs = 1;
+
 
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -59,26 +61,67 @@ public class ParseStarterProjectActivity extends AppCompatActivity {
 
 		ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
-		ParseQuery<Component> queryComponent = ParseQuery.getQuery("Component");
-		ParseQuery<Incident> queryIncident = ParseQuery.getQuery("Incident");
+		loadFromParse();
 
-		queryComponent.findInBackground(new FindCallback<Component>() {
+	}
+
+
+	private void loadFromParse(){
+		ParseQuery<Component> componentQuery = Component.getQuery();
+		ParseQuery<Incident> incidentQuery = Incident.getQuery();
+
+		componentQuery.findInBackground(new FindCallback<Component>() {
 			@Override
 			public void done(List<Component> componentList, ParseException e) {
-				if (e == null){
-					Log.d("AYYLMAO", componentList.toString());
+				if (e ==null){
+					ParseObject.pinAllInBackground((List<Component>) componentList,
+							new SaveCallback() {
+								@Override
+								public void done(ParseException e) {
+									if(e == null){
+										if(!isFinishing()){
 
+										}else{
+											Log.i("Component","Error:(");
+										}
+									}
+								}
+							});
+				}else{
+					Log.i("ComponentMore","Error;-;");
 				}
 			}
 		});
 
-		queryIncident.findInBackground(new FindCallback<Incident>() {
+
+		incidentQuery.findInBackground(new FindCallback<Incident>() {
 			@Override
 			public void done(List<Incident> incidentList, ParseException e) {
-				if (e == null){
-					Log.d("AYYLMAO", incidentList.toString());
+				if (e ==null){
+					ParseObject.pinAllInBackground((List<Incident>) incidentList,
+							new SaveCallback() {
+								@Override
+								public void done(ParseException e) {
+									if(e == null){
+										if(!isFinishing()){
+
+										}else{
+											Log.i("Incident","Error:(");
+										}
+									}
+								}
+							});
+				}else{
+					Log.i("IncidentMore","Error;-;");
 				}
 			}
 		});
+	}
+
+	@Override
+	public void onResume(){
+		super.onResume();
+
+		loadFromParse();
 	}
 }
