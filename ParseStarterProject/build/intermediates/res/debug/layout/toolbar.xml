@@ -7,4 +7,4 @@
     android:elevation="2dp"
     android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    /><!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/layout/toolbar.xml -->
+    /><!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/layout/toolbar.xml -->
