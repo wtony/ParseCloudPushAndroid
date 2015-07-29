@@ -19,10 +19,13 @@ public class Component extends ParseObject {
         return getString("status");
     }
 
+    public String getUrl(){ return getString("url");}
+
     public String getComponentCreatedAt(){
         return getString("created_at");
     }
 
+    public String getComponentUpdatedAt(){ return getString("updated_at");}
     public static ParseQuery<Component> getQuery(){
         return ParseQuery.getQuery(Component.class);
     }

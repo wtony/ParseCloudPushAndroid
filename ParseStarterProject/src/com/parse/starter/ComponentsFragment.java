@@ -1,5 +1,6 @@
 package com.parse.starter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.text.Layout;
@@ -7,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.parse.FindCallback;
 import com.parse.Parse;
@@ -76,6 +78,20 @@ public class ComponentsFragment extends ListFragment {
                 }
             }
         });
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        Component item = componentListAdapter.getItem(position);
+
+        Intent intent = new Intent(getActivity(), ComponentActivity.class);
+        intent.putExtra("name", item.getName());
+        intent.putExtra("status", item.getStatus());
+        intent.putExtra("url", item.getUrl());
+        intent.putExtra("created_at", item.getComponentCreatedAt());
+        intent.putExtra("updated_at", item.getComponentUpdatedAt());
+        startActivity(intent);
+        super.onListItemClick(l, v, position, id);
     }
 
     @Override
