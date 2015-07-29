@@ -13,13 +13,4 @@
         </ListView>
     </android.support.v4.widget.SwipeRefreshLayout>
 
-<<<<<<< HEAD
 </FrameLayout><!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/layout/fragment_incidents.xml -->
-=======
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
-<!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/layout/fragment_incidents.xml -->
->>>>>>> fa8170aadae8c53b793fad5df707385d1864cd1d

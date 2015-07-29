@@ -39,7 +39,7 @@ public class IncidentsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_incidents, container, false);
-        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.ayylmao);
+        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.swipe_incident);
 
 
         ListView list_view = (ListView) view.findViewById(R.id.incidents_list);
