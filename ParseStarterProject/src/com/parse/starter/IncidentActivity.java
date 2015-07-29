@@ -5,7 +5,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -29,10 +31,10 @@ public class IncidentActivity extends AppCompatActivity {
         status.setText(intent.getStringExtra("status"));
 
         TextView url = (TextView)findViewById(R.id.incidentUrl);
-        String text = intent.getStringExtra("url");
-        url.setText("<a href='" + text + "'>Link</a>");
         url.setClickable(true);
         url.setMovementMethod(LinkMovementMethod.getInstance());
+        String text = "<a href='" + intent.getStringExtra("url") + "'>Link</a>";
+        url.setText(Html.fromHtml(text));
 
         TextView createdAt = (TextView)findViewById(R.id.incidentCreatedAt);
         createdAt.setText(intent.getStringExtra("created_at"));

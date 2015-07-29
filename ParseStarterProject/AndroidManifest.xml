@@ -90,6 +90,10 @@
             android:name=".ComponentActivity"
             android:label="@string/title_activity_component" >
         </activity>
+        <activity
+            android:name=".IncidentActivity"
+            android:label="IncidentActivity" >
+        </activity>
     </application>
 
 </manifest>

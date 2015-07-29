@@ -30,12 +30,12 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Status"
             android:id="@+id/componentStatus" />
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
-            <!--android:text="url"-->
-            <!--android:id="@+id/componentUrl" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="url"
+            android:id="@+id/incidentUrl" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,4 +51,4 @@
     </LinearLayout>
 
 </LinearLayout>
-<!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/layout/activity_component.xml -->
+<!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/layout/activity_component.xml -->

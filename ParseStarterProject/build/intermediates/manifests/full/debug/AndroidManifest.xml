@@ -90,6 +90,10 @@
             android:name="com.parse.starter.ComponentActivity"
             android:label="@string/title_activity_component" >
         </activity>
+        <activity
+            android:name="com.parse.starter.IncidentActivity"
+            android:label="IncidentActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.parse.FindCallback;
@@ -76,6 +77,18 @@ public class IncidentsFragment extends Fragment {
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
+        list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Incident item = incidentListAdapter.getItem(position);
+                Intent intent = new Intent(getActivity(), IncidentActivity.class);
+                intent.putExtra("name", item.getName());
+                intent.putExtra("url", item.getUrl());
+                intent.putExtra("updated_at", item.getIncidentUpdatedAt());
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 
@@ -96,7 +109,7 @@ public class IncidentsFragment extends Fragment {
                                             incidentListAdapter.notifyDataSetChanged();
                                             incidentListAdapter.loadObjects();
                                             Log.d("Ayylmao", "Nayylmao");
-                                            if(swipeContainer!=null){
+                                            if (swipeContainer != null) {
                                                 swipeContainer.setRefreshing(false);
                                             }
                                         } else {
@@ -119,18 +132,6 @@ public class IncidentsFragment extends Fragment {
     }
 
 
-    @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        Incident item = incidentListAdapter.getItem(position);
 
-        Intent intent = new Intent(getActivity(), ComponentActivity.class);
-        intent.putExtra("name", item.getName());
-        intent.putExtra("status", item.getStatus());
-        //intent.putExtra("url", item.getUrl());
-        intent.putExtra("created_at", item.getIncidentCreatedAt());
-        intent.putExtra("updated_at", item.getIncidentUpdatedAt());
-        startActivity(intent);
-        super.onListItemClick(l, v, position, id);
-    }
 
 }
