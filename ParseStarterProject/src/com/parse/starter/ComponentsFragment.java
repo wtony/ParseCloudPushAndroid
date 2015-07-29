@@ -87,7 +87,7 @@ public class ComponentsFragment extends ListFragment {
         Intent intent = new Intent(getActivity(), ComponentActivity.class);
         intent.putExtra("name", item.getName());
         intent.putExtra("status", item.getStatus());
-        intent.putExtra("url", item.getUrl());
+        //intent.putExtra("url", item.getUrl());
         intent.putExtra("created_at", item.getComponentCreatedAt());
         intent.putExtra("updated_at", item.getComponentUpdatedAt());
         startActivity(intent);

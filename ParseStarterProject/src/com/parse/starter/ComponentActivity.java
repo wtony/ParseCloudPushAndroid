@@ -27,11 +27,12 @@ public class ComponentActivity extends AppCompatActivity {
 
         TextView status = (TextView)findViewById(R.id.componentStatus);
         status.setText(intent.getStringExtra("status"));
-
-        TextView url = (TextView)findViewById(R.id.componentUrl);
-        url.setText("<a href='" + intent.getStringExtra("url") + "'>Link</a>");
-        url.setClickable(true);
-        url.setMovementMethod(LinkMovementMethod.getInstance());
+//
+//        TextView url = (TextView)findViewById(R.id.componentUrl);
+//        String text = intent.getStringExtra("url");
+//        url.setText("<a href='" + text + "'>Link</a>");
+//        url.setClickable(true);
+//        url.setMovementMethod(LinkMovementMethod.getInstance());
 
         TextView createdAt = (TextView)findViewById(R.id.componentCreatedAt);
         createdAt.setText(intent.getStringExtra("created_at"));

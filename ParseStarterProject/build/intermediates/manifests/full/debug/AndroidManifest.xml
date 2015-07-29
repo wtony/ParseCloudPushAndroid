@@ -26,6 +26,14 @@
 
     <uses-permission android:name="com.parse.starter.permission.C2D_MESSAGE" />
 
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:name="com.parse.starter.ParseApplication"
         android:allowBackup="true"
@@ -73,10 +81,15 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-<!--                   IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
                 <category android:name="com.parse.starter" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name="com.parse.starter.ComponentActivity"
+            android:label="@string/title_activity_component" >
+        </activity>
     </application>
 
 </manifest>
