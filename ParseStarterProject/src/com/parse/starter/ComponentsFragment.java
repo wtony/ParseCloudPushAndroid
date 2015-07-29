@@ -2,7 +2,9 @@ package com.parse.starter;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -20,17 +22,22 @@ import com.parse.SaveCallback;
 
 import java.util.List;
 
-public class ComponentsFragment extends ListFragment {
+public class ComponentsFragment extends Fragment {
 
 //    private ParseQueryAdapter<Component> componentAdapter
 
     private ParseQueryAdapter<Component> componentListAdapter;
+    private SwipeRefreshLayout swipeContainer;
     public ComponentsFragment(){
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_components, container, false);
+        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.swipe_component);
+
+        ListView list_view = (ListView) view.findViewById(R.id.components_list);
 
         ParseQueryAdapter.QueryFactory<Component> factory = new ParseQueryAdapter.QueryFactory<Component>(){
             public ParseQuery<Component> create(){
@@ -45,9 +52,23 @@ public class ComponentsFragment extends ListFragment {
 //
         componentListAdapter = new ComponentListAdapter(inflater,inflater.getContext(),
                 factory);
-        setListAdapter(componentListAdapter);
+       // setListAdapter(componentListAdapter);
+        list_view.setAdapter(componentListAdapter);
 
-        return super.onCreateView(inflater, container, savedInstanceState);
+        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                loadFromParse();
+
+            }
+        });
+
+        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
+                android.R.color.holo_green_light,
+                android.R.color.holo_orange_light,
+                android.R.color.holo_red_light);
+
+        return view;
 
     }
 
@@ -66,6 +87,9 @@ public class ComponentsFragment extends ListFragment {
                                         if (!getActivity().isFinishing()) {
                                             componentListAdapter.notifyDataSetChanged();
                                             componentListAdapter.loadObjects();
+                                            if(swipeContainer!=null){
+                                                swipeContainer.setRefreshing(false);
+                                            }
                                             Log.d("Ayylmao" , "Nayylmao");
                                         } else {
                                             Log.i("Component", "Error:(");

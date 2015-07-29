@@ -13,4 +13,8 @@
         </ListView>
     </android.support.v4.widget.SwipeRefreshLayout>
 
+<<<<<<< HEAD
 </FrameLayout><!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/layout/fragment_incidents.xml -->
+=======
+</FrameLayout><!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/layout/fragment_incidents.xml -->
+>>>>>>> 457ee5b8e972a99ba3e119b1ce7cce8ff43a0b89
