@@ -61,7 +61,7 @@ public class ParseStarterProjectActivity extends AppCompatActivity {
 
 		ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
-		loadFromParse();
+		//loadFromParse();
 
 	}
 
