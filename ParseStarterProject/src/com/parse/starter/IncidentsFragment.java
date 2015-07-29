@@ -5,10 +5,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -19,17 +21,28 @@ import com.parse.SaveCallback;
 
 import java.util.List;
 
-public class IncidentsFragment extends ListFragment {
+public class IncidentsFragment extends Fragment {
 
 
     private ParseQueryAdapter<Incident> incidentListAdapter;
+    private SwipeRefreshLayout swipeContainer;
 
     public IncidentsFragment(){
 
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_incidents, container, false);
+        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.ayylmao);
+
+
+        ListView list_view = (ListView) view.findViewById(R.id.incidents_list);
 
         ParseQueryAdapter.QueryFactory<Incident> factory = new ParseQueryAdapter.QueryFactory<Incident>(){
             public ParseQuery<Incident> create(){
@@ -47,11 +60,23 @@ public class IncidentsFragment extends ListFragment {
 
         incidentListAdapter = new IncidentListAdapter(inflater,inflater.getContext(),
                 factory);
-        setListAdapter(incidentListAdapter);
+        list_view.setAdapter(incidentListAdapter);
 
-        return super.onCreateView(inflater, container, savedInstanceState);
+        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                loadFromParse();
+
+            }
+        });
+
+        // Configure the refreshing colors
+        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
+                android.R.color.holo_green_light,
+                android.R.color.holo_orange_light,
+                android.R.color.holo_red_light);
+        return view;
     }
-
 
 
     private void loadFromParse() {
@@ -70,6 +95,9 @@ public class IncidentsFragment extends ListFragment {
                                             incidentListAdapter.notifyDataSetChanged();
                                             incidentListAdapter.loadObjects();
                                             Log.d("Ayylmao", "Nayylmao");
+                                            if(swipeContainer!=null){
+                                                swipeContainer.setRefreshing(false);
+                                            }
                                         } else {
                                             Log.i("Component", "Error:(");
                                         }
@@ -88,4 +116,5 @@ public class IncidentsFragment extends ListFragment {
         super.onResume();
         loadFromParse();
     }
+
 }

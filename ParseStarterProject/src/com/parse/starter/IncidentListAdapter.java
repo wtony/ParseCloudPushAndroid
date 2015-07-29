@@ -14,6 +14,7 @@ import com.parse.ParseQueryAdapter;
 public class IncidentListAdapter extends ParseQueryAdapter<Incident> {
     public IncidentListAdapter(LayoutInflater inflater,Context context, ParseQueryAdapter.QueryFactory<Incident> queryFactory){
         super(context,queryFactory);
+        super.setObjectsPerPage(10);
     }
 
     @Override
