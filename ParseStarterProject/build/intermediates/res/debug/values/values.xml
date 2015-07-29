@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -13,12 +13,12 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/values/color.xml -->
+    <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/values/color.xml -->
     <eat-comment/>
     <color name="ColorPrimary">#3F51B5</color>
     <color name="ColorPrimaryDark">#303F9F</color>
     <color name="TabScrollColor">#FFFFFF</color>
-    <!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -197,21 +197,21 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/values/strings.xml -->
+    <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">ParseStarterProject</string>
     <string name="hello">Hello World, ParseStarterProjectActivity!</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="parse_app_id">YOUR_APPLICATION_ID</string>
     <string name="parse_client_key">YOUR_CLIENT_KEY</string>
-    <!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/values/styles.xml -->
+    <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!--android:theme="@style/Theme.AppCompat.Light"-->
@@ -220,7 +220,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
