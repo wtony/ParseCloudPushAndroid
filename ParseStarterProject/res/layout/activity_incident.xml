@@ -22,32 +22,32 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/componentName"/>
+            android:id="@+id/incidentName"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Status"
-            android:id="@+id/componentStatus" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="url"
-            android:id="@+id/incidentUrl" />
+            android:id="@+id/incidentStatus" />
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="url"-->
+        <!--android:id="@+id/componentUrl" />-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Created at"
-            android:id="@+id/componentCreatedAt" />
+            android:id="@+id/incidentCreatedAt" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Updated at"
-            android:id="@+id/componentUpdatedAt" />
+            android:id="@+id/incidentUpdatedAt" />
     </LinearLayout>
 
 </LinearLayout>

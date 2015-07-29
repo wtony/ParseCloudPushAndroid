@@ -1,6 +1,7 @@
 package com.parse.starter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -115,6 +116,21 @@ public class IncidentsFragment extends Fragment {
     public void onResume(){
         super.onResume();
         loadFromParse();
+    }
+
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        Incident item = incidentListAdapter.getItem(position);
+
+        Intent intent = new Intent(getActivity(), ComponentActivity.class);
+        intent.putExtra("name", item.getName());
+        intent.putExtra("status", item.getStatus());
+        //intent.putExtra("url", item.getUrl());
+        intent.putExtra("created_at", item.getIncidentCreatedAt());
+        intent.putExtra("updated_at", item.getIncidentUpdatedAt());
+        startActivity(intent);
+        super.onListItemClick(l, v, position, id);
     }
 
 }
