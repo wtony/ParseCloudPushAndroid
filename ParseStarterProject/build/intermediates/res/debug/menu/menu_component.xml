@@ -5,4 +5,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/menu/menu_component.xml -->
+<!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/menu/menu_component.xml -->

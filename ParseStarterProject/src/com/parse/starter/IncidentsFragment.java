@@ -108,7 +108,6 @@ public class IncidentsFragment extends Fragment {
                                         if (!getActivity().isFinishing()) {
                                             incidentListAdapter.notifyDataSetChanged();
                                             incidentListAdapter.loadObjects();
-                                            Log.d("Ayylmao", "Nayylmao");
                                             if (swipeContainer != null) {
                                                 swipeContainer.setRefreshing(false);
                                             }

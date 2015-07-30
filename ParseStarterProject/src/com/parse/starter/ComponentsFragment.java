@@ -105,7 +105,6 @@ public class ComponentsFragment extends Fragment {
                                             if(swipeContainer!=null){
                                                 swipeContainer.setRefreshing(false);
                                             }
-                                            Log.d("Ayylmao" , "Nayylmao");
                                         } else {
                                             Log.i("Component", "Error:(");
                                         }
