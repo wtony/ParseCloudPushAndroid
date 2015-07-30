@@ -29,6 +29,7 @@ public class ComponentListAdapter extends ParseQueryAdapter<Component> {
 
             holder.componentName = (TextView) view.findViewById(R.id.name);
             holder.componentUpdatedAt = (TextView) view.findViewById(R.id.updatedAt);
+            holder.componentStatus = (TextView) view.findViewById(R.id.status);
 
             view.setTag(holder);
         }else{
@@ -39,6 +40,15 @@ public class ComponentListAdapter extends ParseQueryAdapter<Component> {
         componentName.setText(component.getName());
         TextView componentUpdatedAt = holder.componentUpdatedAt;
         componentUpdatedAt.setText(component.getComponentCreatedAt());
+        TextView componentStatus = holder.componentStatus;
+        String status = component.getStatus();
+        componentStatus.setText(status);
+        if (status.equals("operational")){
+            componentStatus.setTextColor(getContext().getResources().getColor(R.color.Operational));
+        }else{
+            componentStatus.setTextColor(getContext().getResources().getColor(R.color.NotOperational));
+
+        }
         
         return view;
     }
@@ -46,6 +56,7 @@ public class ComponentListAdapter extends ParseQueryAdapter<Component> {
     private class ViewHolder{
         TextView componentName;
         TextView componentUpdatedAt;
+        TextView componentStatus;
     }
 
 }

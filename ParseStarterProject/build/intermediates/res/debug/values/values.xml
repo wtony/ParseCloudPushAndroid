@@ -17,6 +17,8 @@
     <eat-comment/>
     <color name="ColorPrimary">#3F51B5</color>
     <color name="ColorPrimaryDark">#303F9F</color>
+    <color name="NotOperational">#FF0000</color>
+    <color name="Operational">#26D20B</color>
     <color name="TabScrollColor">#FFFFFF</color>
     <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
