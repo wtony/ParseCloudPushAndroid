@@ -35,10 +35,10 @@ public class ComponentActivity extends AppCompatActivity {
 //        url.setMovementMethod(LinkMovementMethod.getInstance());
 
         TextView createdAt = (TextView)findViewById(R.id.componentCreatedAt);
-        createdAt.setText(intent.getStringExtra("created_at"));
+        createdAt.setText(HelperMethods.datify(intent.getStringExtra("created_at")));
 
         TextView updatedAt = (TextView)findViewById(R.id.componentUpdatedAt);
-        updatedAt.setText(intent.getStringExtra("updated_at"));
+        updatedAt.setText(HelperMethods.datify(intent.getStringExtra("updated_at")));
 
 
 

@@ -39,7 +39,7 @@ public class ComponentListAdapter extends ParseQueryAdapter<Component> {
         TextView componentName = holder.componentName;
         componentName.setText(component.getName());
         TextView componentUpdatedAt = holder.componentUpdatedAt;
-        componentUpdatedAt.setText(component.getComponentCreatedAt());
+        componentUpdatedAt.setText(HelperMethods.datify(component.getComponentCreatedAt()));
         TextView componentStatus = holder.componentStatus;
         String status = component.getStatus();
         componentStatus.setText(status);
