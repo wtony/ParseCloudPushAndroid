@@ -36,11 +36,11 @@ public class IncidentActivity extends AppCompatActivity {
         String text = "<a href='" + intent.getStringExtra("url") + "'>Link</a>";
         url.setText(Html.fromHtml(text));
 
-        TextView createdAt = (TextView)findViewById(R.id.incidentCreatedAt);
-        createdAt.setText(intent.getStringExtra("created_at"));
+    //    TextView createdAt = (TextView)findViewById(R.id.incidentCreatedAt);
+       // createdAt.setText(HelperMethods.datify(intent.getStringExtra("created_at")));
 
         TextView updatedAt = (TextView)findViewById(R.id.incidentUpdatedAt);
-        updatedAt.setText(intent.getStringExtra("updated_at"));
+        updatedAt.setText(HelperMethods.datify(intent.getStringExtra("updated_at")));
 
 
 

@@ -36,7 +36,7 @@ public class IncidentListAdapter extends ParseQueryAdapter<Incident> {
             TextView incidentName = holder.incidentName;
             incidentName.setText(incident.getName());
             TextView incidentUpdatedAt = holder.incidentUpdatedAt;
-            incidentUpdatedAt.setText(incident.getIncidentUpdatedAt());
+            incidentUpdatedAt.setText(HelperMethods.datify(incident.getIncidentUpdatedAt()));
 
         return view;
     }

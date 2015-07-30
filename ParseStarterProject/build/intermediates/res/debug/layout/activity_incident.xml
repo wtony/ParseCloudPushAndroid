@@ -40,8 +40,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Created at"
-            android:id="@+id/incidentCreatedAt" />
+            android:text="Updated At:"
+            android:id="@+id/filler" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,4 +52,4 @@
     </LinearLayout>
 
 </LinearLayout>
-<!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/layout/activity_incident.xml -->
+<!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/layout/activity_incident.xml -->
