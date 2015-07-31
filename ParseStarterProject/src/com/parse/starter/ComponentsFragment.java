@@ -69,20 +69,20 @@ public class ComponentsFragment extends Fragment {
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
 
-        list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Component item = componentListAdapter.getItem(position);
-
-                Intent intent = new Intent(getActivity(), ComponentActivity.class);
-                intent.putExtra("name", item.getName());
-                intent.putExtra("status", item.getStatus());
-                //intent.putExtra("url", item.getUrl());
-                intent.putExtra("created_at", item.getComponentCreatedAt());
-                intent.putExtra("updated_at", item.getComponentUpdatedAt());
-                startActivity(intent);
-            }
-        });
+//        list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Component item = componentListAdapter.getItem(position);
+//
+//                Intent intent = new Intent(getActivity(), ComponentActivity.class);
+//                intent.putExtra("name", item.getName());
+//                intent.putExtra("status", item.getStatus());
+//                //intent.putExtra("url", item.getUrl());
+//                intent.putExtra("created_at", item.getComponentCreatedAt());
+//                intent.putExtra("updated_at", item.getComponentUpdatedAt());
+//                startActivity(intent);
+//            }
+//        });
         return view;
 
     }

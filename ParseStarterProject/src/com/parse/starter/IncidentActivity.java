@@ -21,7 +21,10 @@ public class IncidentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_incident);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
         Intent intent = getIntent();
 
         TextView name = (TextView)findViewById(R.id.incidentName);

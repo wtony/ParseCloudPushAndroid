@@ -40,9 +40,8 @@
         android:singleLine="true"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
-        android:paddingTop="12dp"
-        android:textStyle="bold"
-        android:text="status" />
+        android:paddingTop="16dp"
+        android:textStyle="bold"/>
 
 
-</LinearLayout><!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/layout/list_item.xml -->
+</LinearLayout><!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/layout/list_item.xml -->
