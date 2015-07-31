@@ -81,7 +81,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-<!--                   IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
                 <category android:name="com.parse.starter" />
             </intent-filter>
         </receiver>
@@ -95,6 +95,10 @@
             android:name=".IncidentActivity"
             android:label="@string/title_activity_incident"
             android:parentActivityName="com.parse.starter.ParseStarterProjectActivity">
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" >
         </activity>
     </application>
 

@@ -219,9 +219,15 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
+<<<<<<< HEAD
     <string name="title_activity_component">Component</string>
     <string name="title_activity_incident">Incident</string>
     <!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+=======
+    <string name="title_activity_about">About U of T SystemStatus</string>
+    <string name="title_activity_component">ComponentActivity</string>
+    <!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+>>>>>>> a528d8e2c2d075940b922f84a1c014047873ab07
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

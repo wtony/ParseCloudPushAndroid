@@ -88,7 +88,7 @@ public class ParseStarterProjectActivity extends AppCompatActivity {
 		}
 
 		if (id==R.id.info){
-			startActivity(new Intent(this, ComponentActivity.class ));
+			startActivity(new Intent(this, AboutActivity.class ));
 		}
 
 		return super.onOptionsItemSelected(item);
