@@ -1528,8 +1528,9 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020038;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020039;
         public static final int abc_textfield_search_material=0x7f02003a;
-        public static final int ic_launcher=0x7f02003b;
-        public static final int notification_template_icon_bg=0x7f02003c;
+        public static final int ic_info_outline_white_48dp=0x7f02003b;
+        public static final int ic_launcher=0x7f02003c;
+        public static final int notification_template_icon_bg=0x7f02003d;
     }
     public static final class id {
         public static final int action0=0x7f0b0063;
@@ -1680,28 +1681,31 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_select_dialog_material=0x7f030017;
         public static final int abc_simple_dropdown_hint=0x7f030018;
-        public static final int activity_component=0x7f030019;
-        public static final int activity_incident=0x7f03001a;
-        public static final int fragment_components=0x7f03001b;
-        public static final int fragment_incidents=0x7f03001c;
-        public static final int list_item=0x7f03001d;
-        public static final int main=0x7f03001e;
-        public static final int notification_media_action=0x7f03001f;
-        public static final int notification_media_cancel_action=0x7f030020;
-        public static final int notification_template_big_media=0x7f030021;
-        public static final int notification_template_big_media_narrow=0x7f030022;
-        public static final int notification_template_lines=0x7f030023;
-        public static final int notification_template_media=0x7f030024;
-        public static final int notification_template_part_chronometer=0x7f030025;
-        public static final int notification_template_part_time=0x7f030026;
-        public static final int select_dialog_item_material=0x7f030027;
-        public static final int select_dialog_multichoice_material=0x7f030028;
-        public static final int select_dialog_singlechoice_material=0x7f030029;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002a;
-        public static final int toolbar=0x7f03002b;
+        public static final int activity_about=0x7f030019;
+        public static final int activity_component=0x7f03001a;
+        public static final int activity_incident=0x7f03001b;
+        public static final int fragment_components=0x7f03001c;
+        public static final int fragment_incidents=0x7f03001d;
+        public static final int list_item=0x7f03001e;
+        public static final int main=0x7f03001f;
+        public static final int notification_media_action=0x7f030020;
+        public static final int notification_media_cancel_action=0x7f030021;
+        public static final int notification_template_big_media=0x7f030022;
+        public static final int notification_template_big_media_narrow=0x7f030023;
+        public static final int notification_template_lines=0x7f030024;
+        public static final int notification_template_media=0x7f030025;
+        public static final int notification_template_part_chronometer=0x7f030026;
+        public static final int notification_template_part_time=0x7f030027;
+        public static final int select_dialog_item_material=0x7f030028;
+        public static final int select_dialog_multichoice_material=0x7f030029;
+        public static final int select_dialog_singlechoice_material=0x7f03002a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002b;
+        public static final int toolbar=0x7f03002c;
     }
     public static final class menu {
-        public static final int menu_component=0x7f0c0000;
+        public static final int menu_about=0x7f0c0000;
+        public static final int menu_component=0x7f0c0001;
+        public static final int menu_main=0x7f0c0002;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f050000;
@@ -1729,7 +1733,8 @@ containing a value of this type.
         public static final int parse_app_id=0x7f050016;
         public static final int parse_client_key=0x7f050017;
         public static final int status_bar_notification_info_overflow=0x7f050018;
-        public static final int title_activity_component=0x7f050019;
+        public static final int title_activity_about=0x7f050019;
+        public static final int title_activity_component=0x7f05001a;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f070073;
