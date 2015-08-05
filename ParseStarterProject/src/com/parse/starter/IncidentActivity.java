@@ -75,7 +75,7 @@ public class IncidentActivity extends AppCompatActivity {
 
                 TextView time = new TextView(getApplicationContext());
                 String timeText = updates.getJSONObject(i).getString("updated_at");
-                body.setTextColor(Color.BLACK);
+                time.setTextColor(Color.GRAY);
                 time.setText(HelperMethods.datify(timeText));
 
                 time.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
