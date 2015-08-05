@@ -12,3 +12,6 @@ Technology used Include:
 * Parse and Google Cloud Messaging for Push Notifications
 * Certain Android Widget Libraries for UI
 * Android SDK
+
+
+## Developed by Tony Wang and Alda Liu
