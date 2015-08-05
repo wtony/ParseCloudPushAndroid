@@ -8,6 +8,11 @@ import com.parse.ParseClassName;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
+import org.json.JSONArray;
+
+import java.util.ArrayList;
+import java.util.List;
+
 @ParseClassName("Incident")
 public class Incident extends ParseObject {
 
@@ -34,6 +39,8 @@ public class Incident extends ParseObject {
     }
 
     public String getStatus() {return getString("status");}
+
+    public JSONArray getUpdates(){return getJSONArray("updates");}
 
     public static ParseQuery<Incident> getQuery(){
         return ParseQuery.getQuery(Incident.class);

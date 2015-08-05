@@ -86,6 +86,9 @@ public class IncidentsFragment extends Fragment {
                 intent.putExtra("name", item.getName());
                 intent.putExtra("url", item.getUrl());
                 intent.putExtra("updated_at", item.getIncidentUpdatedAt());
+                Bundle updates = new Bundle();
+                updates.putString("updates", item.getUpdates().toString());
+                intent.putExtras(updates);
                 startActivity(intent);
             }
         });
