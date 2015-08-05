@@ -1656,7 +1656,6 @@ containing a value of this type.
         public static final int status_bar_notification_info_maxnum=0x7f0a0004;
     }
     public static final class layout {
-<<<<<<< HEAD
         public static final int abc_action_bar_title_item=0x7f040000;
         public static final int abc_action_bar_up_container=0x7f040001;
         public static final int abc_action_bar_view_list_nav_layout=0x7f040002;
@@ -1682,29 +1681,31 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040016;
         public static final int abc_select_dialog_material=0x7f040017;
         public static final int abc_simple_dropdown_hint=0x7f040018;
-        public static final int activity_component=0x7f040019;
-        public static final int activity_incident=0x7f04001a;
-        public static final int fragment_components=0x7f04001b;
-        public static final int fragment_incidents=0x7f04001c;
-        public static final int list_item=0x7f04001d;
-        public static final int main=0x7f04001e;
-        public static final int notification_media_action=0x7f04001f;
-        public static final int notification_media_cancel_action=0x7f040020;
-        public static final int notification_template_big_media=0x7f040021;
-        public static final int notification_template_big_media_narrow=0x7f040022;
-        public static final int notification_template_lines=0x7f040023;
-        public static final int notification_template_media=0x7f040024;
-        public static final int notification_template_part_chronometer=0x7f040025;
-        public static final int notification_template_part_time=0x7f040026;
-        public static final int select_dialog_item_material=0x7f040027;
-        public static final int select_dialog_multichoice_material=0x7f040028;
-        public static final int select_dialog_singlechoice_material=0x7f040029;
-        public static final int support_simple_spinner_dropdown_item=0x7f04002a;
-        public static final int toolbar=0x7f04002b;
+        public static final int activity_about=0x7f040019;
+        public static final int activity_component=0x7f04001a;
+        public static final int activity_incident=0x7f04001b;
+        public static final int fragment_components=0x7f04001c;
+        public static final int fragment_incidents=0x7f04001d;
+        public static final int list_item=0x7f04001e;
+        public static final int main=0x7f04001f;
+        public static final int notification_media_action=0x7f040020;
+        public static final int notification_media_cancel_action=0x7f040021;
+        public static final int notification_template_big_media=0x7f040022;
+        public static final int notification_template_big_media_narrow=0x7f040023;
+        public static final int notification_template_lines=0x7f040024;
+        public static final int notification_template_media=0x7f040025;
+        public static final int notification_template_part_chronometer=0x7f040026;
+        public static final int notification_template_part_time=0x7f040027;
+        public static final int select_dialog_item_material=0x7f040028;
+        public static final int select_dialog_multichoice_material=0x7f040029;
+        public static final int select_dialog_singlechoice_material=0x7f04002a;
+        public static final int support_simple_spinner_dropdown_item=0x7f04002b;
+        public static final int toolbar=0x7f04002c;
     }
     public static final class menu {
-        public static final int menu_component=0x7f0d0000;
-        public static final int menu_main=0x7f0d0001;
+        public static final int menu_about=0x7f0d0000;
+        public static final int menu_component=0x7f0d0001;
+        public static final int menu_main=0x7f0d0002;
     }
     public static final class mipmap {
         public static final int ic_logo=0x7f030000;
@@ -1735,89 +1736,9 @@ containing a value of this type.
         public static final int parse_app_id=0x7f060016;
         public static final int parse_client_key=0x7f060017;
         public static final int status_bar_notification_info_overflow=0x7f060018;
-        public static final int title_activity_component=0x7f060019;
-        public static final int title_activity_incident=0x7f06001a;
-=======
-        public static final int abc_action_bar_title_item=0x7f030000;
-        public static final int abc_action_bar_up_container=0x7f030001;
-        public static final int abc_action_bar_view_list_nav_layout=0x7f030002;
-        public static final int abc_action_menu_item_layout=0x7f030003;
-        public static final int abc_action_menu_layout=0x7f030004;
-        public static final int abc_action_mode_bar=0x7f030005;
-        public static final int abc_action_mode_close_item_material=0x7f030006;
-        public static final int abc_activity_chooser_view=0x7f030007;
-        public static final int abc_activity_chooser_view_list_item=0x7f030008;
-        public static final int abc_alert_dialog_material=0x7f030009;
-        public static final int abc_dialog_title_material=0x7f03000a;
-        public static final int abc_expanded_menu_layout=0x7f03000b;
-        public static final int abc_list_menu_item_checkbox=0x7f03000c;
-        public static final int abc_list_menu_item_icon=0x7f03000d;
-        public static final int abc_list_menu_item_layout=0x7f03000e;
-        public static final int abc_list_menu_item_radio=0x7f03000f;
-        public static final int abc_popup_menu_item_layout=0x7f030010;
-        public static final int abc_screen_content_include=0x7f030011;
-        public static final int abc_screen_simple=0x7f030012;
-        public static final int abc_screen_simple_overlay_action_mode=0x7f030013;
-        public static final int abc_screen_toolbar=0x7f030014;
-        public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
-        public static final int abc_search_view=0x7f030016;
-        public static final int abc_select_dialog_material=0x7f030017;
-        public static final int abc_simple_dropdown_hint=0x7f030018;
-        public static final int activity_about=0x7f030019;
-        public static final int activity_component=0x7f03001a;
-        public static final int activity_incident=0x7f03001b;
-        public static final int fragment_components=0x7f03001c;
-        public static final int fragment_incidents=0x7f03001d;
-        public static final int list_item=0x7f03001e;
-        public static final int main=0x7f03001f;
-        public static final int notification_media_action=0x7f030020;
-        public static final int notification_media_cancel_action=0x7f030021;
-        public static final int notification_template_big_media=0x7f030022;
-        public static final int notification_template_big_media_narrow=0x7f030023;
-        public static final int notification_template_lines=0x7f030024;
-        public static final int notification_template_media=0x7f030025;
-        public static final int notification_template_part_chronometer=0x7f030026;
-        public static final int notification_template_part_time=0x7f030027;
-        public static final int select_dialog_item_material=0x7f030028;
-        public static final int select_dialog_multichoice_material=0x7f030029;
-        public static final int select_dialog_singlechoice_material=0x7f03002a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002b;
-        public static final int toolbar=0x7f03002c;
-    }
-    public static final class menu {
-        public static final int menu_about=0x7f0c0000;
-        public static final int menu_component=0x7f0c0001;
-        public static final int menu_main=0x7f0c0002;
-    }
-    public static final class string {
-        public static final int abc_action_bar_home_description=0x7f050000;
-        public static final int abc_action_bar_home_description_format=0x7f05000d;
-        public static final int abc_action_bar_home_subtitle_description_format=0x7f05000e;
-        public static final int abc_action_bar_up_description=0x7f050001;
-        public static final int abc_action_menu_overflow_description=0x7f050002;
-        public static final int abc_action_mode_done=0x7f050003;
-        public static final int abc_activity_chooser_view_see_all=0x7f050004;
-        public static final int abc_activitychooserview_choose_application=0x7f050005;
-        public static final int abc_search_hint=0x7f05000f;
-        public static final int abc_searchview_description_clear=0x7f050006;
-        public static final int abc_searchview_description_query=0x7f050007;
-        public static final int abc_searchview_description_search=0x7f050008;
-        public static final int abc_searchview_description_submit=0x7f050009;
-        public static final int abc_searchview_description_voice=0x7f05000a;
-        public static final int abc_shareactionprovider_share_with=0x7f05000b;
-        public static final int abc_shareactionprovider_share_with_application=0x7f05000c;
-        public static final int abc_toolbar_collapse_description=0x7f050010;
-        public static final int action_settings=0x7f050011;
-        public static final int app_name=0x7f050012;
-        public static final int hello=0x7f050013;
-        public static final int hello_blank_fragment=0x7f050014;
-        public static final int hello_world=0x7f050015;
-        public static final int parse_app_id=0x7f050016;
-        public static final int parse_client_key=0x7f050017;
-        public static final int status_bar_notification_info_overflow=0x7f050018;
-        public static final int title_activity_about=0x7f050019;
-        public static final int title_activity_component=0x7f05001a;
->>>>>>> a528d8e2c2d075940b922f84a1c014047873ab07
+        public static final int title_activity_about=0x7f060019;
+        public static final int title_activity_component=0x7f06001a;
+        public static final int title_activity_incident=0x7f06001b;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f080073;

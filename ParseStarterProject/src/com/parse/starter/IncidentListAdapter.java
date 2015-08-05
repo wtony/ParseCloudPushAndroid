@@ -27,7 +27,7 @@ public class IncidentListAdapter extends ParseQueryAdapter<Incident> {
 
             holder.incidentName = (TextView) view.findViewById(R.id.name);
             holder.incidentUpdatedAt = (TextView) view.findViewById(R.id.updatedAt);
-
+            holder.incidentStatus = (TextView) view.findViewById(R.id.status);
             view.setTag(holder);
         }else{
             holder = (ViewHolder) view.getTag();
@@ -37,13 +37,15 @@ public class IncidentListAdapter extends ParseQueryAdapter<Incident> {
             incidentName.setText(incident.getName());
             TextView incidentUpdatedAt = holder.incidentUpdatedAt;
             incidentUpdatedAt.setText(HelperMethods.datify(incident.getIncidentUpdatedAt()));
-
+            TextView incidentStatus = holder.incidentStatus;
+            incidentStatus.setText(incident.getStatus());
         return view;
     }
 
     private class ViewHolder{
         TextView incidentName;
         TextView incidentUpdatedAt;
+        TextView incidentStatus;
     }
 
 }

@@ -14,8 +14,4 @@
         android:icon="@drawable/ic_info_outline_white_48dp"
         app:showAsAction="always"
         />
-<<<<<<< HEAD
-</menu><!-- From: file:/home/alda/Development/ParseCloudPushAndroid/ParseStarterProject/res/menu/menu_main.xml -->
-=======
 </menu><!-- From: file:/Users/Tony/Development/ParsePush/ParseCloudPushAndroid/ParseStarterProject/res/menu/menu_main.xml -->
->>>>>>> a528d8e2c2d075940b922f84a1c014047873ab07

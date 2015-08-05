@@ -26,6 +26,7 @@ public class Component extends ParseObject {
     }
 
     public String getComponentUpdatedAt(){ return getString("updated_at");}
+
     public static ParseQuery<Component> getQuery(){
         return ParseQuery.getQuery(Component.class);
     }

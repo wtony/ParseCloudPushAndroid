@@ -43,7 +43,7 @@ public class ComponentsFragment extends Fragment {
         ParseQueryAdapter.QueryFactory<Component> factory = new ParseQueryAdapter.QueryFactory<Component>(){
             public ParseQuery<Component> create(){
                 ParseQuery<Component> query = Component.getQuery();
-                query.orderByDescending("created_at");
+                query.orderByDescending("updated_at");
                 query.fromLocalDatastore();
                 return query;
             }
