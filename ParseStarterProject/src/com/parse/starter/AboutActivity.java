@@ -4,13 +4,18 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class AboutActivity extends AppCompatActivity {
 
     Toolbar toolbar;
+    TextView aboutText;
+    TextView emailText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +24,21 @@ public class AboutActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
+        aboutText = (TextView) findViewById(R.id.aboutText);
+        aboutText.setText("This System Status App provides an overview of current service status messages and scheduled maintenance for major University of Toronto systems and services."+
+                            " You may contact the Joint Operations Group (JOG). \n" +
+        "The JOG is staffed Monday to Friday, 7am-9pm.\n\n" + "This App has pull to refresh functions" +
+                " as well as push notifications when statuses change for the respective Components and Incidents.");
+
+        emailText = (TextView)findViewById(R.id.emailText);
+
+        emailText.setText(Html.fromHtml("<a href='mailto:jog.help@utoronto.ca'>Email Here</a>"));
+        emailText.setClickable(true);
+        emailText.setMovementMethod(LinkMovementMethod.getInstance());
+
     }
 
     @Override
